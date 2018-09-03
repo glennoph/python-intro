@@ -1,7 +1,7 @@
 # python-intro
 python intro notes
 
-## helloworld.py
+## [helloworld.py](helloworld.py)
 * Comments
   * Multiline comments
 * Variable names
