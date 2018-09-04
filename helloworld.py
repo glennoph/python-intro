@@ -24,25 +24,36 @@ print("%s %s" % ("mr", my_name) )
 
 # Lists
 
-shopping_list = ['apples', 'oranges', 'eggs']
+items = ['apples', 'oranges', 'eggs']
 
-print('first item[0] ', shopping_list[0])
+print('first item[0] ', items[0])
 
-print('num items ', len(shopping_list))
+print('num items ', len(items))
 
 # append to list
 
-shopping_list.append('milk')
-print('append milk: ', shopping_list)
+items.append('milk')
+print('append milk: ', items)
 
 # sort list
-shopping_list.sort()
-print('sorted list ', shopping_list)
+items.sort()
+print('sorted list ', items)
 
 # first item
-print('first item ', min(shopping_list))
+print('first item ', min(items))
 # last item
-print('first item ', max(shopping_list))
+print('last item ', max(items))
+
+# slice first 2 items
+print('first 2 ', items[:2])
+
+# slice last 2 items
+print('first 2 ', items[2:])
+
+# extend
+items_extra = ['bread', 'roles']
+items.extend(items_extra)
+print('extend items ', items)
 
 # Tuple (immutable)
 
@@ -56,7 +67,17 @@ print('count_tuple5 ', count_tuple5)
 
 print('len min max ', len(count_tuple5), min(count_tuple5), max(count_tuple5))
 
-# Map 
+# Dictionaries Map 
 
 print('map tbd')
 
+prices = {'apple': 11, 'oranges': 13, 'egg': 5}
+
+print('prices dict ', prices)
+
+prices['bread'] = 33
+
+print('add bread/33 ', prices)
+
+print('get price of bread= ', prices['bread'])
+print('len prices= ', len(prices))
