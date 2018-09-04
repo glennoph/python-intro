@@ -25,5 +25,11 @@ python intro notes
   * ctor
   * Inheritance
   * super 
-
+## [test_func.py](test_func.py)
+* test cases: **test_func.py** (must start with test_)
+* code being tested: **func.py**
+* run test with cmd: 
+  python -m unittest test_func.py
+* or run with cmd:
+  python test_func.py
 
