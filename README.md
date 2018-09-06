@@ -32,4 +32,17 @@ python intro notes
   python -m unittest test_func.py
 * or run with cmd:
   python test_func.py
+### coverage
+* Installation
 
+`pip install coverage`
+
+* Execute tests
+
+`coverage run test_func.py`
+
+* Generate coverage report
+
+`coverage report -m`
+
+  - where -m include missing column in report 
