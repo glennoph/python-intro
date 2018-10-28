@@ -1,0 +1,31 @@
+* Jupyter Notebook
+** intro via docker
+- docker.com :: a platform that supports applications, see https://www.docker.com/
+- docker stacks :: jupyter application via docker, see https://github.com/jupyter/docker-stacks
+- local storage :: file:~/code/jupyter-course to access local data from jupyter
+*** install docker ubuntu
+https://docs.docker.com/install/linux/docker-ce/ubuntu/
+for ubuntu bionic (18.04), xenial, or trusty
+#+BEGIN_SRC
+sudo apt install docker-ce
+#+END_SRC
+
+smoke test with docker hello world
+#+BEGIN_SRC shell 
+docker run hello-world
+#+END_SRC
+*** local storage for jupyter
+Create dir for local files 
+#+BEGIN_SRC 
+mkdir -p ~/code/jupyter-course
+cd ~/code/jupyter-course
+#+END_SRC
+Clone course repo in jupyter-course
+https://github.com/PacktPublishing/Jupyter-Notebook-for-Data-Science.git
+
+*** docker command to start jupyter notebook via docker stacks
+#+BEGIN_SRC shell
+docker run -it --rm -p 8888:8888 -v ~/code/jupyter-course:/home/jovyan jupyter/datascience-notebook
+#+END_SRC
+
+
