@@ -35,4 +35,9 @@ or execute shell script
 
 Notebook is at http://localhost:8888
 
-
+Each notebook should contain the following python code at the beginning: 
+#+BEGIN_SRC python
+%matplotlib inline
+import pandas as pd
+import numpy as np
+#+END_SRC
