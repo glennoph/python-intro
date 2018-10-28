@@ -28,4 +28,11 @@ https://github.com/PacktPublishing/Jupyter-Notebook-for-Data-Science.git
 docker run -it --rm -p 8888:8888 -v ~/code/jupyter-course:/home/jovyan jupyter/datascience-notebook
 #+END_SRC
 
+or execute shell script
+#+BEGIN_SRC shell
+./jupyter-course.sh 
+#+END_SRC
+
+Notebook is at http://localhost:8888
+
 
